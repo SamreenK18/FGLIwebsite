@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+  <script src="table.js" defer></script>
+   
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+
+      <header1>
+        <div class="logo">
+          <p>SC</p>
+        </div>
+    
+        <nav>
+    
+          <ul class="sidebar">
+            <li class="sideitem" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" width="35" height="45"
+                viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);cursor:pointer;transform: ;msFilter:;">
+                <path
+                  d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                </path>
+              </svg></li>
+            <li class="sideitem"><a href="index.html">Home</a></li>
+            <li class="sideitem"><a href="resources.html">Resources</a></li>
+            <li class="sideitem"><a href="blogs.html">Blogs</a></li>
+            <li class="sideitem"><a href="login.php">Login</a></li>
+            <li class="sideitem"><a href="register.php">Create Account</a></li>
+    
+          </ul>
+    
+          <ul class="navbar-list">
+            <li class="navbaritem"><a href="index.html">Home</a></li>
+    
+            <li class="navbaritem"><a href="resources.html">Resources</a>
+              <ul class="submenu">
+                <li class="sideitem"><a href="test.html">University Tests</a></li>
+                <li class="sideitem"><a href="scholarships.html">Scholarships</a></li>
+                <li class="sideitem"><a href="internships.html">Internships</a></li>
+            </li>
+          </ul>
+    
+          <li class="navbaritem"><a href="blogs.html">Blogs</a></li>
+    
+          </ul>
+        </nav>
+    
+    
+        <button class="butcta"><a class="cta" href="login.php">Account</a></button>
+        <button class="i" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="40"
+              viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg></a></button>
+    
+    
+      </header1>
+
+  <section class="skolar">
+
+      <div class="title">
+      <h1 class="test-heading">Scholarships</h1>
+        <p class="testin">Worried about paying for college? Find relevent scholarships here.</p>
+
+       </div>
+  </section>
+
+    <section class="sk">
+        <main class="table" id="customers_table">
+            <section class="table__header">
+                <h1>Scholarships</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search" >
+                    
+                </div>
+                <div class="export__file">
+                    <label for="export-file" class="export__file-btn" title="Export File"></label>
+                    <input type="checkbox" id="export-file">
+                    <div class="export__file-options">
+                        <label>Export As &nbsp; &#10140;</label>
+                        <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                    </div>
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Sr No </th>
+                            <th> Link </th>
+                            <th>Decsription</th>
+                            <th> International</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td><a href="https://www.mpowerfinancing.com/scholarshipsclass=" class="scholar">MPower Financing</a></td>
+                            <td>MPOWER Financing offers a variety of scholarships specifically designed to support international students pursuing higher education in the United States and Canada.</td>
+
+                            <td>
+                                <p class="status"> Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><a href="https://foreign.fulbrightonline.org/about/foreign-student-program" class="scholar">Fullbright Program</a> </td>
+                            <td> The Fullbright Program is one of the most prestigious scholarship programs globally. The Fulbright Program offers a variety of scholarships to cater to different academic and professional goals. </td>
+
+                            <td>
+                                <p class="status cancelled">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><a href="https://www.internationalstudent.com/scholarships/" class="scholar">
+                                International Student</a></td>
+                            <td>International Student has a comprehensive and searchable database of grants, scholarships, loan programs, and other information for international students. </td>
+
+                            <td>
+                                <p class="status shipped">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><a href="https://bigfuture.collegeboard.org/scholarship-search" class="scholar"></a>BigFuture </td> 
+                            <td> Offered by the College Board, these scholarships reward students for taking proactive steps toward their future. </td>
+
+                            <td>
+                                <p class="status delivered">USA, Mexico, Canada</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><a href="https://www.topuniversities.com/student-info/scholarship-advice/international-scholarships-study-us" class="scholar">QS Rankings List</a> </td>
+                            <td> A comprehensive list of scholarships combined by QS. </td>
+
+                            <td>
+                                <p class="status pending">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td><a href=https://the.akdn/en/what-we-do/developing-human-capacity/education/international-scholarships class="scholar">Aga Khan Foundation</a></td>
+                            <td> The Aga Khan Foundation’s International Scholarship Programme is an opportunity for outstanding scholars from selected countries*, who have no other means of financing their studies, to pursue postgraduate education. </td>
+
+                            <td>
+                                <p class="status cancelled">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td><a href="https://www.eastwestcenter.org/education/education-program-overview" class="scholar">East West Center</a> </td>
+                            <td> Scholarships to study in the US within selected institutions, aimed at international students from the Asia-Pacific region. </td>
+
+                            <td>
+                                <p class="status delivered">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td><a href="https://www.aauw.org/what-we-do/educational-funding-and-awards/international-fellowships/if-application/" class="scholar">American Association of University Women</a> </td>
+                            <td>Fellowships offered by the American Association of University Women for female international students to study in the US. </td>
+
+                            <td>
+                                <p class="status pending">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td><a href="https://mastercardfdn.org/all/scholars/" class="scholar">MasterCard Foundation </td>
+                            <td>Scholarships for African students to study in the US and Africa. </td>
+
+                            <td>
+                                <p class="status cancelled">Yes</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> 10</td>
+                            <td><a href="https://www.american.edu/admissions/international/au-egls-apply.cfm" class="scholar">American University </td>
+                            <td>  Undergraduate scholarships to study in the US at American University in Washington DC. Aimed at international students who are showing leadership potential. </td>
+
+                            <td>
+                                <p class="status cancelled">No</p>
+                            </td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+    </section>
+  <footer>
+    <p class="foot">@2024 Student Connect</p>
+  </footer>
+                        
+</body></html>

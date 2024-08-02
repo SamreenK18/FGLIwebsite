@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>home page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+
+  <header1>
+    <div class="logo">
+      <p>SC</p>
+    </div>
+
+    <nav>
+
+      <ul class="sidebar">
+        <li class="sideitem" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" width="35" height="45"
+            viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);cursor:pointer;transform: ;msFilter:;">
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+            </path>
+          </svg></li>
+        <li class="sideitem"><a href="index.html">Home</a></li>
+        <li class="sideitem"><a href="resources.html">Resources</a></li>
+        <li class="sideitem"><blogs.html">Blogs</a></li>
+        <li class="sideitem"><a href="login.php">Login</a></li>
+        <li class="sideitem"><a href="register.php">Create Account</a></li>
+
+      </ul>
+
+      <ul class="navbar-list">
+        <li class="navbaritem"><a href="index.html">Home</a></li>
+
+        <li class="navbaritem"><a href="resources.html">Resources</a>
+          <ul class="submenu">
+            <li class="sideitem"><a href="test.html">University Tests</a></li>
+            <li class="sideitem"><a href="scholarships.html">Scholarships</a></li>
+            <li class="sideitem"><a href="internships.html">Internships</a></li>
+        </li>
+      </ul>
+
+      <li class="navbaritem"><a href="blogs.html">Blogs</a></li>
+
+      </ul>
+    </nav>
+
+
+    <button class="butcta"><a class="cta" href="login.php">Account</a></button>
+    <button class="i" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="40"
+          viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform:; msFilter:;">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg></a></button>
+
+
+  </header1>
+
+  <div class="index">
+    <div class="home">
+      <div>
+
+
+        <h1 class="home-title">You're <br> Not Alone.</h1><br>
+
+        <p class="hi">
+          Are you the first in your family to attend college? Navigating higher education can be challenging, but you
+          don't have to do it alone. Welcome to Student Connect. Here, you'll find support, resources, and inspiration
+          from fellow first-generation students who understand your journey. Connect with peers, share experiences, and
+          access tools to help you succeed.</p><br>
+
+        <p class="hi"> Let's make your college dreams a reality together</p>
+      </div>
+      <img src="assets\people.jpg" class="imeg">
+    </div>
+
+    
+  </div>
+  <div class="slider">
+      <!-- list Items -->
+      <div class="list">
+          <div class="item active">
+              <img src="assets/graduates.jpg">
+              <div class="content">
+                  <p>About FGLI</p>
+                  <h2>Demographics</h2>
+                  <p>
+                    <b>Disproportionately from marginalized groups:</b> They are often from underrepresented minority groups.<br>
+                      <b>Higher likelihood of being female:</b> Women from low-income backgrounds are more likely to be first-generation college students.<br>
+                        <b>Older than peers:</b> They tend to be older than their continuing-generation counterparts.
+                  </p><br>
+              </div>
+          </div>
+          <div class="item">
+              <img src="assets/stress.jpg">
+              <div class="content">
+                  <p>Some facts about FGLI students</p>
+                  <h2>Challenges</h2>
+                  <p>
+                    <b>Financial constraints:</b> Many face significant financial burdens, including tuition, fees, and living expenses.<br>
+                      <b>Limited support network:</b> Lack of family or friends with college experience can lead to feelings of <br>
+                          <b>Balancing work and school:</b> Many work to support themselves or their families, making it difficult to focus on studies.
+                  </p><br>
+              </div>
+          </div>
+          <div class="item">
+              <img src="assets/bench.jpg">
+              <div class="content">
+                  <p>Some facts about FGLI students</p>
+                  <h2>Outcomes</h2>
+                  <p>
+                    <b>Lower graduation rates:</b> Compared to their continuing-generation peers, they have lower college completion rates.<br>
+                      <b>Higher student loan debt:</b> They are more likely to accumulate student loan debt.<br>
+                        <b>Lower post-graduation earnings:</b> First-generation college graduates often earn less than their peers whose parents attended college.
+                  </p><br>
+              </div>
+          </div>
+          
+      </div>
+      <!-- button arrows -->
+      <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <!-- thumbnail -->
+      <div class="thumbnail">
+          <div class="item active">
+              <img src="assets/graduates.jpg">
+              <div class="content">
+                <p class="con">Demographics</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="assets/stress.jpg">
+              <div class="content">
+                <p class="con">Challenges</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="assets/bench.jpg">
+              <div class="content">
+                  <p class="con">Outcomes</p>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+
+
+  <footer>
+    <p class="foot">@2024 Student Connect</p>
+  </footer>
+
+</body>
+
+</html>

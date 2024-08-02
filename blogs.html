@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog Posts</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        body {
+            font-family: Lora;
+            margin: 0;
+            padding: 0;
+            background-color: #FDFCD4;
+        }
+        .container {
+            width: 100%;
+            
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #380e0b;
+            
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color:#FDFCD4;
+            text-align:center;
+            justify-content:center;
+            align-items:center;
+            
+        }
+
+        .posts-container{
+            
+            display:flex;
+            margin-bottom:1em;
+        }
+        .post {
+            
+            padding: 15px;
+            width:60%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #C78E3A;
+            margin:auto;
+            margin-bottom: 1em;
+        }
+        .post h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .post p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            line-height: 1.5;
+            color:#380e0b;
+        }
+        .post small {
+            color: #555;
+        }
+
+        .navbaritem{
+  list-style:none;
+   display:inline-block;
+   padding: 0px 20px;
+   justify-content:space-between;
+}
+
+
+.containerr {
+  position: center;
+  margin: 20px;
+  width: 100%;
+   display:inline;
+
+}
+
+.sidebar{
+   position:fixed;
+   top:0;
+   right:0;
+   height:100vh;
+   width:250px;
+   z-index:999;
+   background:#380e0b;
+   display:flex;
+   flex-direction:column;
+   align-items:flex-start;
+   justify-content:flex-start;
+   list-style-type:none;
+   font-size:30px;
+   display:none;
+}
+.sideitem{
+   width:100%;
+   margin:0.5em;
+
+}
+.sidebar a{
+   width:100%;
+}
+.i{
+   background:transparent;
+   display:none;
+}
+.side{
+   display:inline;
+}
+
+.navbar-list { list-style-type: none; overflow: hidden; 
+ height: 30px; text-align:center;             
+}
+
+header1{
+   width:100%;
+   height:50px;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:30px;
+   background:#380e0b;
+   
+
+}
+.navbaritem{
+   display:inline;
+
+   font-size:150%;
+   margin-top:2em;
+   margin-bottom:2em;
+   text-align:center;
+}
+
+ul .submenu{
+   position:absolute;
+   width:175px;
+
+   background-color:#380e0b;
+   margin-top:-50px;
+   z-index:-999;
+   opacity:0;
+   transition: all ease 0.3s;
+   list-style-type:none;
+   justify-content:center;
+   align-items:center;
+
+}
+ul li .submenu{
+   float:none;
+   width:20%;
+}
+ul li:hover .submenu{
+   z-index:99;
+   opacity:1;
+   margin-top:0px;
+   text-align:center;
+}
+a:hover { color:#C78E3A; }
+/*LINKS*/
+a{
+   color: #FDFCD4;
+   text-decoration: none;
+
+}
+.cta{
+   color:#281E18;
+}
+
+.logo{
+   font-size:30px;
+   color: #FDFCD4;
+   font-weight:bold;
+}
+button{
+   padding:9px 20px;
+   background-color: #FDFCD4;
+   border: none;
+   border-radius:50px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<header1>
+    <div class="logo">
+      <p>SC</p>
+    </div>
+
+    <nav>
+
+      <ul class="sidebar">
+        <li class="sideitem" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" width="35" height="45"
+            viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);cursor:pointer;transform: ;msFilter:;">
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+            </path>
+          </svg></li>
+        <li class="sideitem"><a href="index.html">Home</a></li>
+        <li class="sideitem"><a href="resources.html">Resources</a></li>
+        <li class="sideitem"><blogs.html">Blogs</a></li>
+        <li class="sideitem"><a href="login.php">Login</a></li>
+        <li class="sideitem"><a href="register.php">Create Account</a></li>
+
+      </ul>
+
+      <ul class="navbar-list">
+        <li class="navbaritem"><a href="index.html">Home</a></li>
+
+        <li class="navbaritem"><a href="resources.html">Resources</a>
+          <ul class="submenu">
+            <li class="sideitem"><a href="test.html">University Tests</a></li>
+            <li class="sideitem"><a href="scholarships.html">Scholarships</a></li>
+            <li class="sideitem"><a href="internships.html">Internships</a></li>
+        </li>
+      </ul>
+
+      <li class="navbaritem"><a href="blogs.html">Blogs</a></li>
+
+      </ul>
+    </nav>
+
+
+    <button class="butcta"><a class="cta" href="login.php">Account</a></button>
+    <button class="i" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="40"
+          viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform:; msFilter:;">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg></a></button>
+
+
+  </header1>
+
+
+
+    <div class="container">
+        <h1>All Blog Posts</h1>
+        <div id="posts-container"></div>
+    </div>
+
+    <script>
+        // Function to render posts
+        function renderPosts(posts) {
+            const postsContainer = document.getElementById('posts-container');
+            postsContainer.innerHTML = '';
+
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.className = 'post';
+                postElement.innerHTML = `
+                    <h2>${post.title}</h2>
+                    <small>By ${post.firstname} on ${post.post_date}</small>
+                    <p>${post.content}</p>
+                `;
+                postsContainer.appendChild(postElement);
+            });
+        }
+
+        // Fetch blog posts from the server
+        fetch('fetch-posts.php')
+            .then(response => response.json())
+            .then(data => {
+                renderPosts(data);
+            })
+            .catch(error => console.error('Error fetching blog posts:', error));
+    </script>
+</body>
+</html>
