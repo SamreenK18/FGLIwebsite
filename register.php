@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $country, $firstname, $lastname, $password, $email);
 
     if ($stmt->execute()) {
-        header("Location: dashboard.php");
+        header("Location: login.php");
         exit();
     } else {
         echo "Error: " . $stmt->error;
