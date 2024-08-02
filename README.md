@@ -19,7 +19,7 @@ Mastering a fresh framework and database system for our website took a lot of ef
 
 
 # What we learned
-We learnt advanced CSS formatting, using animations in JavaScript and a whole new scripting language - PHP and MySQL! It sure was challenging, but with each hurdle we overcame, our understanding deepened, and our skills expanded.We're excited to apply this newfound knowledge to create even more complex and interactive projects.
+This was our very first hackathon. We learnt advanced CSS formatting, using animations in JavaScript and a whole new scripting language - PHP and MySQL! It sure was challenging, but with each hurdle we overcame, our understanding deepened, and our skills expanded.We're excited to apply this newfound knowledge to create even more complex and interactive projects.
 
 
 # What’s Next
