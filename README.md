@@ -17,5 +17,10 @@ Xampp: to store user data
 # Challenges Faced by Our Team
 Mastering a fresh framework and database system for our website took a lot of effort. Building the backend part of our website was tricky, and we're still figuring out the best way to manage user data. 
 
+
+# What we learned
+We learnt advanced CSS formatting, using animations in JavaScript and a whole new scripting language - PHP and MySQL! It sure was challenging, but with each hurdle we overcame, our understanding deepened, and our skills expanded.We're excited to apply this newfound knowledge to create even more complex and interactive projects.
+
+
 # What’s Next
 We look forward to adding more resources, filtering blog data by content type, adding media to blogs and creating a more responsive user page. We aim to keep on updating the website time-to-time to keep up with new resources.
